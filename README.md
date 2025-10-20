@@ -1,7 +1,7 @@
 This is a Dockerfile to create a Docker Image for netplexflix, a project that use IA to find missing language of audio tracks
 in a video file where language for this audio track is not defined
 
-Look at his project at -> https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector. 
+Look at his project and uspport the guy -> https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector. 
 
 ```yaml
 services:
