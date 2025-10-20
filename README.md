@@ -3,6 +3,7 @@ in a video file where language for this audio track is not defined
 
 Look at his project and uspport the guy -> https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector. 
 
+Here is an example of Docker-Compose (compose.yaml) to launch it :
 ```yaml
 services:
   audiodetector:
