@@ -24,4 +24,4 @@ RUN pip cache purge
 
 RUN rm -rf /home/AudioDetector/.cache/pip
 
-CMD ["bash"]
+CMD ["python3","MUALD.py"]
