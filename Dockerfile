@@ -24,4 +24,4 @@ RUN pip cache purge
 
 RUN rm -rf /home/AudioDetector/.cache/pip
 
-CMD ["python3","MUALD.py",";","python3","/home/AudioDetector/MKV-Undefined-Audio-Language-Detector/lib/MediaLabelAll.py"]
+CMD ["bash"]
