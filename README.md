@@ -8,11 +8,11 @@ Here is an example of Docker-Compose (compose.yaml) to launch it :
 services:
   audiodetector:
     container_name: audiodetector
-    build: ./Undefined-Audio-Detector
+    build: https://github.com/EtienneRod/MediaImport.git
     restart: unless-stopped
-    user: "1000:1000"
+    user: "1000:1000" # Optional. User that will be used in contrainer
     environment:
-      TZ: "America/Toronto"
+      TZ: "America/Toronto" # Optional. Change to you Timezone
     volumes:
-      - /Movies:/Movies
-      - ./config:/home/AudioDetector/MKV-Undefined-Audio-Language-Detector/config
+      - /Movies:/Movies # Required. Change to your Media root folder
+      - ./config:/home/AudioDetector/MKV-Undefined-Audio-Language-Detector/config # Required. Path fot folder where config.yml is located. config.yml options are documented at                                                                                                  https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector
