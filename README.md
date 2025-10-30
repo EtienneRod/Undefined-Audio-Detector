@@ -2,6 +2,10 @@ This is a Dockerfile to create a Docker Image for ULDAS, which stands for "Undef
 
 Look at his project and support the guy -> https://github.com/netplexflix/ULDAS. 
 
+This is normal that building takes some time (about 10 minutes here) and resulting image is beefy (over 12Gb). It downloads and installs AI engine and LLMs locally so this image don't rely on internet access and won't send your data to an AI online.
+
+ULDAS can also use Nvidia GPU acceleration (CUDA) but since I don't have Nvidia GPU, so this compose.yaml example doesn't support it out of the box and needs to be adapted. Look at https://docs.docker.com/compose/how-tos/gpu-support for more info, this should be pretty simple.
+
 Here is an example of Docker-Compose (compose.yaml) to launch it :
 ```yaml
 services:
@@ -11,7 +15,7 @@ services:
     restart: unless-stopped
     user: "1000:1000" # Optional. User that will be used in contrainer
     environment:
-      TZ: "America/Toronto" # Optional. Change to you Timezone
+      TZ: "America/Toronto" # Optional. Change to your Timezone
     volumes:
       - /Movies:/Movies # Required. Change to your Media root folder
-      - ./config:/home/AudioDetector/ULDAS/config # Required. Path fot folder where config.yml is located. config.yml options are documented at https://github.com/netplexflix/ULDAS
+      - ./config:/home/AudioDetector/ULDAS/config # Required. Path where config.yml is located. config.yml options are documented at https://github.com/netplexflix/ULDAS.                                                                       processed_files.json will also be created in this path to save processed files list and avoid reprocessing them,                                                                   which speedup process alot. If you want to reprocess all file, delete this file.
