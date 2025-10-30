@@ -4,7 +4,7 @@ Look at his project and support the guy -> https://github.com/netplexflix/ULDAS.
 
 This is normal that building takes some time (about 10 minutes here) and resulting image is beefy (over 12Gb). It downloads and installs AI engine and LLMs locally so this image don't rely on internet access and won't send your data to an AI online.
 
-ULDAS can also use Nvidia GPU acceleration (CUDA) but since I don't have Nvidia GPU, so this compose.yaml example doesn't support it out of the box and needs to be adapted. Look at https://docs.docker.com/compose/how-tos/gpu-support for more info, this should be pretty simple.
+ULDAS can also use Nvidia GPU acceleration (CUDA) but since I don't have Nvidia GPU, this compose.yaml example doesn't support it out of the box and needs to be adapted. Look at https://docs.docker.com/compose/how-tos/gpu-support for more info, this should be pretty straightforward.
 
 Here is an example of Docker-Compose (compose.yaml) to launch it :
 ```yaml
