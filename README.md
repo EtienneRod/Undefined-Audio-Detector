@@ -18,4 +18,4 @@ services:
       TZ: "America/Toronto" # Optional. Change to your Timezone
     volumes:
       - /Movies:/Movies # Required. Change to your Media root folder
-      - ./config:/home/AudioDetector/ULDAS/config # Required. Path where config.yml is located. config.yml options are documented at https://github.com/netplexflix/ULDAS.                                                                       processed_files.json will also be created in this path to save processed files list and avoid reprocessing them,                                                                   which speedup process alot. If you want to reprocess all file, delete this file.
+      - ./config:/home/AudioDetector/ULDAS/config # Required. Path where config.yml is located. config.yml options are documented at https://github.com/netplexflix/ULDAS. processed_files.json will also be created in this path to save processed files list and avoid reprocessing them, which speedup process alot. If you want to reprocess all file, delete this file.
