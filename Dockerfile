@@ -18,6 +18,8 @@ WORKDIR /home/AudioDetector/MKV-Undefined-Audio-Language-Detector
 
 RUN pip install -r requirements.txt
 
+RUN pip install plexapi
+
 RUN pip cache purge
 
 RUN rm -rf /home/AudioDetector/.cache/pip
