@@ -15,4 +15,4 @@ services:
       TZ: "America/Toronto" # Optional. Change to you Timezone
     volumes:
       - /Movies:/Movies # Required. Change to your Media root folder
-      - ./config:/home/AudioDetector/MKV-Undefined-Audio-Language-Detector/config # Required. Path fot folder where config.yml is located. config.yml options are documented at                                                                                                  https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector
+      - ./config:/home/AudioDetector/MKV-Undefined-Audio-Language-Detector/config # Required. Path fot folder where config.yml is located. config.yml options are documented at https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector
