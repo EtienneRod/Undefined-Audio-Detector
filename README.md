@@ -1,7 +1,6 @@
-This is a Dockerfile to create a Docker Image for netplexflix, a project that use IA to find missing language of audio tracks
-in a video file where language for this audio track is not defined
+This is a Dockerfile to create a Docker Image for ULDAS, which stands for "Undefined Language Detector for Audio and Subtitles". This is a project that use IA to find language of audio tracks not defined properly in audio streams of a given movie file.
 
-Look at his project and uspport the guy -> https://github.com/netplexflix/ULDAS. 
+Look at his project and support the guy -> https://github.com/netplexflix/ULDAS. 
 
 Here is an example of Docker-Compose (compose.yaml) to launch it :
 ```yaml
