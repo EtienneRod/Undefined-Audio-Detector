@@ -12,9 +12,9 @@ USER AudioDetector
 
 WORKDIR /home/AudioDetector
 
-RUN git clone https://github.com/netplexflix/MKV-Undefined-Audio-Language-Detector.git
+RUN git clone https://github.com/netplexflix/ULDAS.git
 
-WORKDIR /home/AudioDetector/MKV-Undefined-Audio-Language-Detector
+WORKDIR /home/AudioDetector/ULDAS
 
 RUN pip install -r requirements.txt
 
@@ -24,4 +24,4 @@ RUN pip cache purge
 
 RUN rm -rf /home/AudioDetector/.cache/pip
 
-CMD ["python3","MUALD.py"]
+CMD ["python3","ULDAS.py"]
